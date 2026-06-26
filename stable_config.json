@@ -1,0 +1,44 @@
+{
+  "config": {
+    "data_path": "./data",
+    "quick_test": false,
+    "backbone": "ResNet50-512",
+    "test_fold": 0,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "weight_decay": 0.005,
+    "epochs": 50,
+    "gamma": 1.0,
+    "tau": 0.4,
+    "optimizer": "AdamW",
+    "scheduler": "Cosine",
+    "grad_clip": 1.0,
+    "patience": 20,
+    "auto_save": true,
+    "save_interval": 5,
+    "checkpoint_path": "./checkpoints",
+    "checkpoint_file": "",
+    "use_pretrained": true,
+    "weights_path": "",
+    "lambda_in": 1.0,
+    "lambda_cross": 1.0,
+    "lambda_hybrid": 1.0,
+    "lambda_single": 1.0,
+    "lambda_causal": 1.0,
+    "lambda_cls": 1.0,
+    "val_timeout_sec": 60,
+    "val_max_stall": 2
+  },
+  "estrus_stages": {
+    "classes": [
+      "pre_estrus",
+      "estrus",
+      "post_estrus"
+    ],
+    "descriptions": {
+      "pre_estrus": "Pre-estrus behavioral and physiological patterns",
+      "estrus": "Active estrus stage with peak mating receptivity",
+      "post_estrus": "Post-estrus recovery phase patterns"
+    }
+  }
+}

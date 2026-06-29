@@ -45,7 +45,7 @@ data/
     └── post_estrus/
 ```
 
-Paired samples are matched by filename stem across EEG and audio directories. Cross-subject 5-fold evaluation uses test folds F0 through F4.
+Paired samples are matched by filename stem across EEG and audio directories. Cross-subject 10-fold evaluation uses test folds F0 through F9.
 
 ### Training
 
